@@ -1,0 +1,13 @@
+<button id="btn-0">Button 1</button>
+<button id="btn-1">Button 2</button>
+<button id="btn-2">Button 3</button>
+
+<script type="text/javascript">
+const prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+
+  document.getElementById(`btn-${btnNum}`).onclick = function(e){
+  alert(prizes[btnNum]);
+}
+}
+<script>
